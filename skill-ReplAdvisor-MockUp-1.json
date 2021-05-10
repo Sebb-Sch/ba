@@ -1,0 +1,1471 @@
+{
+  "intents": [
+    {
+      "intent": "get_inventory_targets",
+      "examples": [
+        {
+          "text": "check inventory targets"
+        },
+        {
+          "text": "give me the inventory targets"
+        },
+        {
+          "text": "inventory targets"
+        },
+        {
+          "text": "i want to get inventory targets"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "info_function",
+      "examples": [
+        {
+          "text": "available features"
+        },
+        {
+          "text": "available functions"
+        },
+        {
+          "text": "functions"
+        },
+        {
+          "text": "info functions"
+        },
+        {
+          "text": "info_functions"
+        },
+        {
+          "text": "what can you"
+        },
+        {
+          "text": "what can you do"
+        },
+        {
+          "text": "what is your purpose"
+        }
+      ]
+    },
+    {
+      "intent": "info_parameters",
+      "examples": [
+        {
+          "text": "article"
+        },
+        {
+          "text": "available parameters"
+        },
+        {
+          "text": "info parameters"
+        },
+        {
+          "text": "location"
+        },
+        {
+          "text": "plant"
+        },
+        {
+          "text": "what location"
+        },
+        {
+          "text": "what product"
+        }
+      ]
+    },
+    {
+      "intent": "joke",
+      "examples": [
+        {
+          "text": "funny"
+        },
+        {
+          "text": "joke"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "loadsizes",
+      "examples": [
+        {
+          "text": "get loadsize"
+        },
+        {
+          "text": "how much can we load"
+        },
+        {
+          "text": "loadsizes"
+        },
+        {
+          "text": "tell me the optimal loadsizes"
+        },
+        {
+          "text": "what are the loadsizes for"
+        }
+      ],
+      "description": "get loadsizes for particular article"
+    },
+    {
+      "intent": "name",
+      "examples": [
+        {
+          "text": "how should i call you"
+        },
+        {
+          "text": "name"
+        },
+        {
+          "text": "What is your name"
+        }
+      ],
+      "description": "What is your name"
+    },
+    {
+      "intent": "negative_feedback",
+      "examples": [
+        {
+          "text": "i dont want it"
+        },
+        {
+          "text": "no"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "plot_recommendation_request",
+      "examples": [
+        {
+          "text": "order recommendation"
+        },
+        {
+          "text": "plot order recommendation"
+        },
+        {
+          "text": "plot recommendation request"
+        },
+        {
+          "text": "recommendation"
+        }
+      ],
+      "description": "plot_order quantitiy"
+    },
+    {
+      "intent": "plot_stock_composition_request",
+      "examples": [
+        {
+          "text": "composition"
+        },
+        {
+          "text": "plot stock composition"
+        },
+        {
+          "text": "plot the articles that are on stock"
+        },
+        {
+          "text": "stock"
+        },
+        {
+          "text": "stock composition"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "plot_stock_quantity_request",
+      "examples": [
+        {
+          "text": "plot stock quantity"
+        },
+        {
+          "text": "quantity"
+        },
+        {
+          "text": "show me how much product we have"
+        },
+        {
+          "text": "show me the quantity for a product"
+        }
+      ],
+      "description": "get graph (bar chart) for stock quantity for product and location"
+    },
+    {
+      "intent": "positive_feedback",
+      "examples": [
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "yes"
+        },
+        {
+          "text": "yes please"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "run",
+      "examples": [
+        {
+          "text": "action"
+        },
+        {
+          "text": "go"
+        },
+        {
+          "text": "run"
+        },
+        {
+          "text": "start"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sales_future",
+      "examples": [
+        {
+          "text": "forecast"
+        },
+        {
+          "text": "plot demand request future"
+        },
+        {
+          "text": "plot future sales"
+        },
+        {
+          "text": "plot prediction"
+        },
+        {
+          "text": "prediciton"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sales_past",
+      "examples": [
+        {
+          "text": "draw demand request past"
+        },
+        {
+          "text": "draw past demand request"
+        },
+        {
+          "text": "past"
+        },
+        {
+          "text": "past demand"
+        },
+        {
+          "text": "plot demand request past"
+        },
+        {
+          "text": "plot past demand request"
+        },
+        {
+          "text": "show demand request past"
+        },
+        {
+          "text": "show past demand request"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "article",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Magnesium",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Phosphor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vitamin",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "plants",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Hamburg",
+          "synonyms": [
+            "Hamburg City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manchester",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "New York",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Singapur",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vienna",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "day",
+          "synonyms": [
+            "days"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "month",
+          "synonyms": [
+            "months"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "week",
+          "synonyms": [
+            "weeks"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "year",
+          "synonyms": [
+            "years"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing. "
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding. "
+              },
+              {
+                "text": "I didn't get your meaning. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_70_1600618578916",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1617544521488",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_10_1617544521489"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Do you want to refer to the last week, months or years?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1617545294646",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1617545294646",
+      "previous_sibling": "handler_9_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1617545701273",
+      "context": {
+        "plants": "@plants"
+      },
+      "conditions": "@plants",
+      "event_name": "input",
+      "dialog_node": "handler_1_1617545701284"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_11_1617545294646",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_12_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Lastly, I need the time period. Please answer in full numbers, for example two."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_11_1617545294646",
+      "event_name": "focus",
+      "dialog_node": "handler_13_1617545294646",
+      "previous_sibling": "handler_12_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_15_1617546434536",
+      "context": {
+        "article": "@article"
+      },
+      "conditions": "@article",
+      "event_name": "input",
+      "dialog_node": "handler_16_1617546434536"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the Article."
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter the Article."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_15_1617546434536",
+      "event_name": "focus",
+      "dialog_node": "handler_17_1617546434536",
+      "previous_sibling": "handler_16_1617546434536"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_18_1617546434536",
+      "context": {
+        "plants": "@plants"
+      },
+      "conditions": "@plants",
+      "event_name": "input",
+      "dialog_node": "handler_19_1617546434536"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the Location"
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter the Location"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_18_1617546434536",
+      "event_name": "focus",
+      "dialog_node": "handler_20_1617546434536",
+      "previous_sibling": "handler_19_1617546434536"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the Location"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1617537227675",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1617537227680",
+      "previous_sibling": "handler_4_1617537227680"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please provide the location"
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please provide the location"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1617543955530",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1617543955531",
+      "previous_sibling": "handler_9_1617543955531"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_23_1617546599786",
+      "context": {
+        "article": "@article"
+      },
+      "conditions": "@article",
+      "event_name": "input",
+      "dialog_node": "handler_24_1617546599786"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the article."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_23_1617546599786",
+      "event_name": "focus",
+      "dialog_node": "handler_25_1617546599786",
+      "previous_sibling": "handler_24_1617546599786"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Lastly, I need the time period. Please answer in full numbers, for example two."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1617544521488",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1617544521489",
+      "previous_sibling": "handler_10_1617544521489"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Do you want to refer to the last week, months or years?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1617544539634",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1617544539635",
+      "previous_sibling": "handler_5_1617544539635"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1617545294646",
+      "context": {
+        "article": "@article"
+      },
+      "conditions": "@article",
+      "event_name": "input",
+      "dialog_node": "handler_3_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1617537227675",
+      "context": {
+        "plants": "@plants"
+      },
+      "conditions": "@plants",
+      "event_name": "input",
+      "dialog_node": "handler_4_1617537227680"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the desired article."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1617545294646",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1617545294646",
+      "previous_sibling": "handler_3_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the location you want to ship it to."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1617899307433",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1617899307450",
+      "previous_sibling": "handler_6_1617899307450"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1617537088680",
+      "context": {
+        "article": "@article"
+      },
+      "conditions": "@article",
+      "event_name": "input",
+      "dialog_node": "handler_5_1617537088723"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "For which article do you want to know the sales figures?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1617543928566",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1617543928578",
+      "previous_sibling": "handler_8_1617543928578"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1617544539634",
+      "context": {
+        "time": "@time"
+      },
+      "conditions": "@time",
+      "event_name": "input",
+      "dialog_node": "handler_5_1617544539635"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What article do you want to ship?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1617899462907",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1617899462909",
+      "previous_sibling": "handler_6_1617899462909"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the Article."
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter the Article."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1617537088680",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1617537088723",
+      "previous_sibling": "handler_5_1617537088723"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1617545294646",
+      "context": {
+        "plants": "@plants"
+      },
+      "conditions": "@plants",
+      "event_name": "input",
+      "dialog_node": "handler_6_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1617899307433",
+      "context": {
+        "plants": "@plants"
+      },
+      "conditions": "@plants",
+      "event_name": "input",
+      "dialog_node": "handler_6_1617899307450"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1617899462907",
+      "context": {
+        "article": "@article"
+      },
+      "conditions": "@article",
+      "event_name": "input",
+      "dialog_node": "handler_6_1617899462909"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I need information about the location. For which one would you like to enquire about future sales? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1617545294646",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1617545294646",
+      "previous_sibling": "handler_6_1617545294646"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1617543928566",
+      "context": {
+        "article": "@article"
+      },
+      "conditions": "@article",
+      "event_name": "input",
+      "dialog_node": "handler_8_1617543928578"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please provide the location, which you are looking for."
+          ],
+          "selection_policy": "sequential"
+        },
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please provide the location, which you are looking for."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1617545701273",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1617545701284",
+      "previous_sibling": "handler_1_1617545701284"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1617543955530",
+      "context": {
+        "plants": "@plants"
+      },
+      "conditions": "@plants",
+      "event_name": "input",
+      "dialog_node": "handler_9_1617543955531"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1617545294646",
+      "context": {
+        "time": "@time"
+      },
+      "conditions": "@time",
+      "event_name": "input",
+      "dialog_node": "handler_9_1617545294646"
+    },
+    {
+      "type": "frame",
+      "title": "sales_past",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The demand for $article in $plants is declining. During the last $number $time 's the sales went down from 55.600 kg to 42.000 kg. The demand thus fell by around 32 per cent."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#sales_past",
+      "dialog_node": "node_10_1600603026714",
+      "previous_sibling": "node_14_1617546434534"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What else can I do for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_70_1600618578916",
+      "conditions": "#negative_feedback",
+      "dialog_node": "node_10_1617900199503",
+      "previous_sibling": "node_6_1617899858160"
+    },
+    {
+      "type": "standard",
+      "title": "no",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The order was not placed. You can ask for another recommendation."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617900593599",
+      "conditions": "#negative_feedback",
+      "dialog_node": "node_10_1617900666297",
+      "previous_sibling": "node_5_1617900664832"
+    },
+    {
+      "type": "standard",
+      "title": "name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can just call me Replenishment Advisor. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#name",
+      "dialog_node": "node_10_1617901921383",
+      "previous_sibling": "node_7_1617916634504"
+    },
+    {
+      "type": "frame",
+      "title": "get_inventory_targets",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The inventory target of $article at $plants location is 30.000 kg."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#get_inventory_targets",
+      "dialog_node": "node_1_1600598370938",
+      "previous_sibling": "node_9_1600621217443"
+    },
+    {
+      "type": "frame",
+      "title": "sales_future",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Since it takes 8 weeks for our order to arrive, we need to plan two to three months ahead. Here is how much $article is forcasted at the $plants plant in next $number $time`s."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#sales_future",
+      "dialog_node": "node_1_1617545294643",
+      "previous_sibling": "node_10_1600603026714"
+    },
+    {
+      "type": "frame",
+      "title": "stock_quantity",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Inventory of $article at $plants is 20 units."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#plot_stock_quantity_request",
+      "dialog_node": "node_14_1617546434534",
+      "previous_sibling": "node_1_1600598370938"
+    },
+    {
+      "type": "frame",
+      "title": "loadsizes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We can fit 10.000 kg of $article in a 20ft container and 18.000kg in a 40ft container."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#loadsizes",
+      "dialog_node": "node_22_1617546599785",
+      "previous_sibling": "node_29_1600615146232"
+    },
+    {
+      "type": "frame",
+      "title": "stock_composition_request",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "At our plant in Vienna 5000 units of Phosphor, 3500 units of Vitamins and 400 units of Magnesium are in stock with more in transit."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#plot_stock_composition_request",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_29_1600615146232",
+      "previous_sibling": "node_1_1617545294643"
+    },
+    {
+      "type": "standard",
+      "title": "Functions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a list of my available functions:\n- display the past sales or a future sale prediction\n- show the stock composition, quantity and inventory targets\n- recommend the next order and its loadsizes "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#info_function",
+      "dialog_node": "node_3_1600621884946",
+      "previous_sibling": "node_6_1617901818549"
+    },
+    {
+      "type": "standard",
+      "title": "yes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The order for 10.000 kg for 2021-04-30 and 10.000 kg for 2021-05-03 was placed. \n\nIf you want to know anything else just ask me."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617900593599",
+      "conditions": "#positive_feedback",
+      "dialog_node": "node_5_1617900664832"
+    },
+    {
+      "type": "standard",
+      "title": "if_loadsizes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay, one moment please."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_70_1600618578916",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_22_1617546599785"
+      },
+      "conditions": "#positive_feedback",
+      "dialog_node": "node_6_1617899858160"
+    },
+    {
+      "type": "standard",
+      "title": "kindness",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am glad I can help."
+              },
+              {
+                "text": "You are welcome."
+              },
+              {
+                "text": "No problem!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#positive_feedback",
+      "dialog_node": "node_6_1617901818549",
+      "previous_sibling": "node_10_1617901921383"
+    },
+    {
+      "type": "frame",
+      "title": "plot_recommendation_request",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "By subtracting the forecasted sales from the current inventory, I projected the future inventory levels. Here I make sure to include orders in transit as well. Once I know the projected inventory levels I can calculate the economic order quantity.​\nConsidering how much $article fits into our containers, I chose two orders of 10,000 kg to reach our order-up-to levels most efficiently.\nYou should order 10.000 kg for 2021-04-30 and 10.000 kg for 2021-05-03. \n\nDo you want to know the loadsizes?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#plot_recommendation_request",
+      "dialog_node": "node_70_1600618578916",
+      "previous_sibling": "node_22_1617546599785"
+    },
+    {
+      "type": "standard",
+      "title": "place_order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Should I place the order for $article ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1600598370938",
+      "conditions": "true",
+      "dialog_node": "node_7_1617900593599"
+    },
+    {
+      "type": "standard",
+      "title": "joke",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What is a ghost favorite type? A booooooooolean."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#joke",
+      "dialog_node": "node_7_1617916634504",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Info",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "At the moment I can give information about the articles magnesium, phosphor and vitamins. The locations I know include Manchester, New York, Hamburg, Vienna, Singapore. In the future, however, my system will be extended to other parameters so that I can support you even better."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#info_parameters",
+      "dialog_node": "node_9_1600621217443",
+      "previous_sibling": "node_3_1600621884946"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1617546434534",
+      "disabled": true,
+      "dialog_node": "response_21_1617546434536"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1600598370938",
+      "disabled": true,
+      "dialog_node": "response_9_1617537442413",
+      "previous_sibling": "node_7_1617900593599"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1600603026714",
+      "variable": "$article",
+      "dialog_node": "slot_10_1617543928566"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1600603026714",
+      "variable": "$number",
+      "dialog_node": "slot_10_1617544521488",
+      "previous_sibling": "slot_5_1617544539634"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1617545294643",
+      "variable": "$number",
+      "dialog_node": "slot_11_1617545294646",
+      "previous_sibling": "slot_8_1617545294646"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_14_1617546434534",
+      "variable": "$article",
+      "dialog_node": "slot_15_1617546434536",
+      "previous_sibling": "response_21_1617546434536"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_14_1617546434534",
+      "variable": "$plants",
+      "dialog_node": "slot_18_1617546434536",
+      "previous_sibling": "slot_15_1617546434536"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1617545294643",
+      "variable": "$article",
+      "dialog_node": "slot_2_1617545294646"
+    },
+    {
+      "type": "slot",
+      "parent": "node_29_1600615146232",
+      "variable": "$plants",
+      "dialog_node": "slot_2_1617545701273"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_22_1617546599785",
+      "variable": "$article",
+      "dialog_node": "slot_23_1617546599786"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1600603026714",
+      "variable": "$plants",
+      "dialog_node": "slot_3_1617543955530",
+      "previous_sibling": "slot_10_1617543928566"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1600598370938",
+      "variable": "$plants",
+      "dialog_node": "slot_4_1617537227675",
+      "previous_sibling": "slot_7_1617537088680"
+    },
+    {
+      "type": "slot",
+      "parent": "node_70_1600618578916",
+      "variable": "$article",
+      "dialog_node": "slot_4_1617899462907",
+      "previous_sibling": "slot_8_1617899307433"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1600603026714",
+      "variable": "$time",
+      "dialog_node": "slot_5_1617544539634",
+      "previous_sibling": "slot_3_1617543955530"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1617545294643",
+      "variable": "$plants",
+      "dialog_node": "slot_5_1617545294646",
+      "previous_sibling": "slot_2_1617545294646"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1600598370938",
+      "variable": "$article",
+      "dialog_node": "slot_7_1617537088680",
+      "previous_sibling": "response_9_1617537442413"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1617545294643",
+      "variable": "$time",
+      "dialog_node": "slot_8_1617545294646",
+      "previous_sibling": "slot_5_1617545294646"
+    },
+    {
+      "type": "slot",
+      "parent": "node_70_1600618578916",
+      "variable": "$plants",
+      "dialog_node": "slot_8_1617899307433",
+      "previous_sibling": "node_10_1617900199503"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, I am Replenishment Advisor. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "For more information you can click the buttons below.",
+            "options": [
+              {
+                "label": "List of parameters",
+                "value": {
+                  "input": {
+                    "text": "info_parameters"
+                  }
+                }
+              },
+              {
+                "label": "List of functions",
+                "value": {
+                  "input": {
+                    "text": "info_functions"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "credentials_for_action": {
+          "user": "e0507fbf-68b7-421b-9c46-ef99f302842b",
+          "password": "cTRvOS0iyffptpA1x17QzhXbsdKgGgdqDvJVX9r87o0dOBkPV5LOAds10ak7qXHm"
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "ReplAdvisor MockUp",
+  "language": "en",
+  "description": ""
+}
